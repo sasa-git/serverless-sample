@@ -40,50 +40,45 @@ functions:
     handler: handler.ping
     events:
       - http:
-        path: ping
-        method: get
-
+          path: ping
+          method: get
   list:
     handler: handler.list
     events:
       - http:
-        path: tasks
-        method: get
-
+          path: tasks
+          method: get
   get:
     handler: handler.get
     events:
       - http:
-        path: tasks/{id}
-        method: get
-
+          path: tasks/{id}
+          method: get
   create:
     handler: handler.create
     events:
       - http:
-        path: tasks
-        method: post
-
+          path: tasks
+          method: post
   update:
     handler: handler.update
     events:
       - http:
-        path: tasks/{id}
-        method: patch
-
+          path: tasks/{id}
+          method: patch
   delete:
     handler: handler.delete
     events:
       - http:
-        path: tasks/{id}
-        method: delete
+          path: tasks/{id}
+          method: delete
 
 resources:
   Resources:
     testTable:
       Type: AWS::DynamoDB::Table
       Properties:
-        TableName: ${selt:service}-task
+        TableName: ${self:service}-task
         AttributeDefinitions:
           - AttributeName: id
             AttributeType: S
