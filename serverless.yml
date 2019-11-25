@@ -28,7 +28,7 @@ provider:
   environment:
     DDB_TABLE: ${self:service}-task # DynamoDB名の設定
   
-  iamRoleStatemants:
+  iamRoleStatements:
     - Effect: "Allow"
       Action:
         - "dynamodb:*"
