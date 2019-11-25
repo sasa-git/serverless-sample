@@ -89,6 +89,32 @@ resources:
           ReadCapacityUnits: 1
           WriteCapacityUnits: 1
 
+# Service Information
+# service: sls-hands-on-user-13
+# stage: dev
+# region: ap-northeast-1
+# stack: sls-hands-on-user-13-dev
+# resources: 39
+# api keys:
+#   None
+# endpoints:
+#   GET - https://gvp0bwoeql.execute-api.ap-northeast-1.amazonaws.com/dev/ping
+#   GET - https://gvp0bwoeql.execute-api.ap-northeast-1.amazonaws.com/dev/tasks
+#   GET - https://gvp0bwoeql.execute-api.ap-northeast-1.amazonaws.com/dev/tasks/{id}
+#   POST - https://gvp0bwoeql.execute-api.ap-northeast-1.amazonaws.com/dev/tasks
+#   PATCH - https://gvp0bwoeql.execute-api.ap-northeast-1.amazonaws.com/dev/tasks/{id}
+#   DELETE - https://gvp0bwoeql.execute-api.ap-northeast-1.amazonaws.com/dev/tasks/{id}
+# functions:
+#   ping: sls-hands-on-user-13-dev-ping
+#   list: sls-hands-on-user-13-dev-list
+#   get: sls-hands-on-user-13-dev-get
+#   create: sls-hands-on-user-13-dev-create
+#   update: sls-hands-on-user-13-dev-update
+#   delete: sls-hands-on-user-13-dev-delete
+# layers:
+#   None
+# Serverless: Run the "serverless" command to setup monitoring, troubleshooting and testing.
+
 
 # you can overwrite defaults here
 #  stage: dev
