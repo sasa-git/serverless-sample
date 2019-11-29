@@ -72,6 +72,12 @@ functions:
       - http:
           path: tasks/{id}
           method: delete
+  done:
+    handler: handler.done
+    events:
+      - http:
+          path: tasks/{id}/done
+          method: get
 
 resources:
   Resources:
